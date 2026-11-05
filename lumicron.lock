@@ -1,0 +1,24 @@
+{
+  "environment_id": "lenv_e8fa5eacffdfbe42018d2e747dbdb4dfb9fa451e013301af479dd264eefd7af4",
+  "packages": [
+    {
+      "capabilities": {
+        "components": "components.py",
+        "technology": "technology.py"
+      },
+      "content_digest": "3bfd53b504d3c486276466b6de9aa0603421459d43a893cccb326b7797a4b94f",
+      "dependencies": [],
+      "id": "lumicron.demo",
+      "name": "Lumicron Demo PDK",
+      "process": "lumicron.demo",
+      "source": {
+        "locator": "../LumicronTester/Packages/DemoPDK",
+        "type": "path"
+      },
+      "version": "0.1.0"
+    }
+  ],
+  "project_id": "9a9ba01f-34ad-41d3-80c7-e7a983310f25",
+  "requirements_digest": "183a3b8fee8a15315a0f5a2bb9f22c9489df86d9e88eeff0253bca86025fc080",
+  "schema": 1
+}
