@@ -19,4 +19,4 @@ def mzi(
     return c
     
 if __name__ == "__main__":
-    mzi(x_sep=100.0, dL=50.0)
+    mzi(x_sep=200.0, dL=100.0)

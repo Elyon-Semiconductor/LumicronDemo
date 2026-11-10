@@ -15,7 +15,8 @@ def mzi(
     c.Place(combiner).using(combiner.ports["o1"]).relative_to(splitter.ports["o2"]).move_by(dx=x_sep).rotate_by(180.0)
     
     
-    #Below are alternate ways to express similar placement
+    #Below are alternate ways to express similar placement, 
+    #comment line 15 and un-comment each line below to see the resulting layout
     
     # c.Place(combiner).right_of(splitter).rotate_by(180.0).move_by(dx=x_sep)
     # c.Place(combiner).using("W").relative_to(splitter.E).move_by(dx=x_sep).rotate_by(180.0)
@@ -23,4 +24,4 @@ def mzi(
     return c
     
 if __name__ == "__main__":
-    mzi(x_sep=100.0, dL=50.0)
+    mzi(x_sep=200.0, dL=50.0)
