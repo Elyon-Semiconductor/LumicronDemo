@@ -1,6 +1,12 @@
 import lumicron as lm
 from lumicron_demo.all import MMI1x2
 
+"""
+Lesson 00 - Place
+
+
+"""
+
 @lm.pcell
 def mzi(
     x_sep: float,

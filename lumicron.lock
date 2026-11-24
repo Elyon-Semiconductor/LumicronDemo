@@ -1,12 +1,12 @@
 {
-  "environment_id": "lenv_e8fa5eacffdfbe42018d2e747dbdb4dfb9fa451e013301af479dd264eefd7af4",
+  "environment_id": "lenv_b1880becd6f4f4038e1646da06866c3886d567b6ce212e4c4ba2772b66034786",
   "packages": [
     {
       "capabilities": {
         "components": "components.py",
         "technology": "technology.py"
       },
-      "content_digest": "3bfd53b504d3c486276466b6de9aa0603421459d43a893cccb326b7797a4b94f",
+      "content_digest": "161da7f41960d799704faa0fae3d9a6221fb428d5f4a14657187ebcf0b997963",
       "dependencies": [],
       "id": "lumicron.demo",
       "name": "Lumicron Demo PDK",
