@@ -31,11 +31,11 @@ def composite_bundle(n_tapers: int):
 
     (
     c.Route(sources, style="manhattan", spine=0)
-    .go("E", by=1000)
+    .go("E", by=2000)
     .taper(width=2.0, length=5.0, offset=20.0)
     .go("N", by=300)
     .style("default", taper_length=5.0)
-    .go("W", by=500)
+    .go("W", by=1500)
     .go("N", by=200)
     .to(destinations)
     )
