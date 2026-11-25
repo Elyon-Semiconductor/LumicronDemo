@@ -9,7 +9,7 @@ def composite_route():
     t2 = c.add(pdk.Taper())
     
     c.Place(t1).at((0.0, 0.0))
-    c.Place(t2).at((200.0, 200.0)).rotate_by(180.0)
+    c.Place(t2).at((200.0, 500.0)).rotate_by(180.0)
     
     (
     c.Route(t1.ports["o1"])
