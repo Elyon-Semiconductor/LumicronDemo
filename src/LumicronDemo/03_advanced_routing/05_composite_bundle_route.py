@@ -28,17 +28,20 @@ def composite_bundle(n_tapers: int):
     
     sources = [left.ports[f"out_{i}"] for i in range(n_tapers)]
     destinations = [right.ports[f"out_{i}"] for i in range(n_tapers)]
-
+    
     (
     c.Route(sources, style="manhattan", spine=0)
-    .go("E", by=2000)
+    .go("E", by=1800.0)
     .taper(width=2.0, length=5.0, offset=20.0)
-    .go("N", by=300)
-    .style("default", taper_length=5.0)
-    .go("W", by=1500)
-    .go("N", by=200)
+    .go("N", by=300.0)
+    .taper(width=sources[0].width, length=5.0)
+    .style(profile=pdk.RP.nitride)
+    .go("W", by=1500.0)
+    .style("default")
+    .go("N", by=200.0)
     .to(destinations)
     )
+    
     
     return c
     
