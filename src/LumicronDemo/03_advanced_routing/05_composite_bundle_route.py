@@ -31,14 +31,16 @@ def composite_bundle(n_tapers: int):
     
     (
     c.Route(sources, style="manhattan", spine=0)
-    .go("E", by=1800.0)
+    .go("E", by=2000)
     .taper(width=2.0, length=5.0, offset=20.0)
-    .go("N", by=300.0)
+    .go("N", by=300)
     .taper(width=sources[0].width, length=5.0)
-    .style(profile=pdk.RP.nitride)
-    .go("W", by=1500.0)
-    .style("default")
-    .go("N", by=200.0)
+    .style(profile=pdk.RP.nitride,
+           transition_at="start", transition_offset=20)
+    .go("W", by=1500)
+    .style("default",
+           transition_at="end", transition_offset=20)
+    .go("N", by=200)
     .to(destinations)
     )
     
