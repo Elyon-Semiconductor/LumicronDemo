@@ -16,6 +16,7 @@ def composite_route():
     .go("E", by=100.0)
     .taper(width=2.0, length=5.0, offset=20.0)
     .go("N", by=150.0)
+    .taper(width=0.5, length=5.0)
     .style(profile=pdk.RP.nitride)
     .go("W", by=300.0)
     .go("N", to=t2.ports["o1"])

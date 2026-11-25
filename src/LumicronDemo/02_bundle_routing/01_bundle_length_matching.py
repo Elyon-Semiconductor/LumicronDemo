@@ -30,7 +30,7 @@ def taper_bundle(n_tapers: int):
     b1_destinations = [right.ports[f"out_{i}"] for i in range(int(n_tapers/2))]
     
     b2_sources = [left.ports[f"out_{i}"] for i in range(int(n_tapers/2), n_tapers)]
-    b2_desitnations = [right.ports[f"out_{i}"] for i in range(int(n_tapers/2), n_tapers)]
+    b2_destinations = [right.ports[f"out_{i}"] for i in range(int(n_tapers/2), n_tapers)]
 
     b1 = c.Route(b1_sources, style="manhattan", radius=25.0).to(b1_destinations).match_lengths(flip=True, flatten=0.8)
     b2 = c.Route(b2_sources, style="manhattan", radius=25.0).to(b2_destinations).match_length_to(b1, flatten=0.8)
